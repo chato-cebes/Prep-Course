@@ -1,0 +1,24 @@
+ * Variables
+	Las variables son una manera de guardar informacion para usarla despues.
+	var a = 2
+	La estructura de una varible incia con la palabra "var" separada por un espacio del nombre de la variable, el cual puede ser llamado de la forma que uno quiera,
+	lo mas recomendable es que el nombre de la variable describa lo que hace esa variable. Despues del nombre se escribe un igual e inmediatamente despues se escribe
+	lo que queremos que haga esa variable.
+
+ * Strings
+	Los strings son letras, palabras, frases, parrafos, que son llamados cadenas de texto y se pueden usar como respuesta de las funciones o variables. 
+	Siempre deben estar entre comillas dobles ("), o sencillas (').
+
+ * Funciones (argumentos, `return`)
+	La funciones son una parte importante de Js, se la llevan muy bien con las variables y se usan para procesos mas avanzados que las variables,
+	en ellas tambien se pueden usar las condicionales "if", las iteraciones "For", "While", las mismas variables "var" y las cadenas de taxto "Strings". 
+	Los argumentos pertenecen a las funciones y se usan como un comodin dentro de las funciones para remplazar por valores externos y obtener un resultado.
+	Return, es una declaracion que va al final de la funcion, una vez finalice el proceso de la funcion éste finaliza el proceso y devuelve el resultado
+	de la funcion.   
+
+ * Declaraciones `if`
+	Son declaraciones que devuelven un resultado dependiendo de la condicion se cumpla o no. La sentencia "Si" nos da la posibilidad de elegir entre dos o mas opciones
+	 y dependiendo de las condiciones que se ingresen, los resultados varian.
+    
+ * Valores booleanos (`true`, `false`)
+	Son valores muy usados en programacion y son el resultado de las funciones, nos dan un verde o un rojo para continuar o no.

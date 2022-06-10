@@ -1,0 +1,15 @@
+* `for`
+	"for" se usa para evaluar una variable en un ciclo en forma de bucle. Primero se declara la variable, despues la variable se evalua en la condicion deseada
+	y al final se fija el incremento de la variable.// for (let x = 2; x < 10; x++). En este caso la variable a evaluar es "x=2", ésta pasa por la condicion
+	"< 10" que es igual a "true" y despues incrementa en una unidad para empezar de nuevo el ciclo con el siguiente numero. 
+	Esta ciclo, bucle, se repite hasta que la condicion retorne "False", en ese caso todo se detiene. 
+
+* `&&`
+	Los ampersand juntos son uno de los operadores logicos que evalua las condiciones dadas y devuelve un "true" o "false". "&" significa "Y".
+	Dadas 2 condiciones el operador evalua que se cumplan y devuelve "true", sí y solo sí se cumplen las dos condiciones. En caso contrario que se cumpla una de las dos, devuleve "false".
+* `||`
+	Las barras verticales representan otro operador logico que significa "0", al evaluar un par de condiciones retorna true si alguna de las dos se cumple.
+	"retorna true si 4>2 || 4=0", Si evaluamos un valor con estas condiciones, si alguna de las dos se cumple el operador devuelve "true". 
+
+* `!`
+	El signo de admiracion representa el inverso de la comparacion, es decir "Perro" === "Perro" (Perro es igual a Perro); "Perro" !== "Gato"(Perro es diferernte de Gato)
