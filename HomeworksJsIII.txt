@@ -1,0 +1,26 @@
+* Arrays
+
+Los arrays son un conjunto de datos encerrados entre parentesis cuadrados; estos datos pueden ser Strings, Números o Booleanos
+El array contiene un nombre y lleva los objetos ingresados separados por comas "," dentro de los parentesis cuadrados
+
+                            "Numeros =[uno, dos, tres, cuatro]
+
+POSICION DE LOS OBJETOS
+Los array listan los elementos desde la posicion 0, es decir el elemento "uno" de la lista "Numeros" tiene la posicion 0 dentro de la lista, el "dos" la posision 1 y asi sucesivamente.
+Tambien se puede saber que cantidad de datos hay en las lista usando .length "por ejemplo: Numeros.length es igual a 4".
+Para acceder a cada posicion especificamente usamos el numero de la ubicacion "Ejemplo: Numeros[1] = "dos""
+Una manera de extraer el ultimo dato de la lista es con -1. "Ejemplo: Numeros[-1] = "cuatro""
+
+CAMBIAR O INGRESAR DATOS EN EL ARRAY 
+De esta manera se puede asignar un nombre diferente a ese dato "Ejemplo: Numeros[1] = "cinco"" por lo que el nuevo array sera "Numeros =[uno, cinco, tres, cuatro]
+Para ingresar los nueva informacion se usa el metodoo .push(), Este metodo agrega el dato al final de la lista como ultimo elemento. "Ejemplo: Numeros.push(ocho)" => "Numeros =[uno, cinco, tres, cuatro, ocho]
+
+ELIMINAR DATOS DE UN ARRAY
+Para eliminar el ultimo dato de la lista se usar el metodo ".pop()"
+si se quiere eliminar un elemento especificamente se ingresa como argumento del metodo ".pop(uno)"
+    ***unshift*** y ***.shift*** son metodos que se hacen lo mismo que .push y .pop con la unic diferencia wue agregan y eliminanrlos datos al cominzo de la lista.
+    Numeros.unshift(cero) va a a gregar al comienzo de la lista numeros el elemento "cero".
+    Numeros.shift() va a eleminar el primer elemento de la lista numeros.
+
+
+
