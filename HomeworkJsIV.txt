@@ -1,0 +1,20 @@
+* Objetos
+Los objetos son un a bolsa en donde se meten muchos datos, estos pueden ser de todo tipo, booleanos, strings, variables, numeros incluso funciones.
+estos daos son contenidoen entre llaves {}, son muy similares a los array pero los objetos son mas avanzados ya que pueden contener mucha informacion relacionada a una sola cosa.
+
+* Propiedades
+Las propiedades de los objetos son el contenido de los objetos que se dividen en clave y valor; La clave es el identificador para el valor. puede haber muchos valores iguales pero 
+nunca una clave igual.
+El valor es el referido de la clave, es el contenido que esa asociado a la clave y puede ser de muchos tipos, strings, boolenanos, variables, etc 
+
+* Métodos
+Son funciones que se guardan en los objetos. En los arrays se usaron metodos como .length, o .pop(), de la misma manera pueden ser llamado en los objetos anteponiendo un punto (.) y 
+como otra opcion se pueden encerrar entre parentesis [].
+
+* Bucle `for…in`
+en los array se puede usar un ciclo For tradicional para iterar, pero en los objetos el la iteracion de hace con un procedimiento diferente todo debido a su naturaleza de 
+clave-valor. El bucle for..in itera dentro del objeto.
+
+* Notación de puntos vs notación de corchetes
+La notacion de puntos nos permite acceder a las propiedades de los objetos. "nombre_objeto.clave" seria la manera correcta para acceder a los datos.
+La notacion de corchetes tambien nos permite acceder a las propiedades introduccionedo la cleve del objetos dentro de comillas y parentesis. "nombre_objeto['clave']"
