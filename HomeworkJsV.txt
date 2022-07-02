@@ -1,0 +1,50 @@
+*prototype
+    Es la forma que tienen las clases de poder usar los objetos entre ellos. otra forma de expresarlo es que son metodos que deriban el objeto
+    a su origen, por ejemplo, un objeto gato = {nombre: 'Kittie', color: 'gris'} ===> gato.__proto__ retornara que gato pertenece a un objeto.
+
+    __proto__ es la manera que tiene un objeto para comunicarse con su herencia en grados superiores.
+
+    prototype adicionalmente permite internamente brindarle metodos a los objetos reconociendolos por su herencia es asi como un un array tiene metodos como
+    .length, .pop, .shift y solamente mediante el trabajo interno de prototype en cada objeto reconociendo si es boolenao, array, varible, objeto literal etc,
+    las caracteristicas se pueden aplicar.
+
+    la syntaxisi para usasr el prototype es la siguiente 
+    "raza" es un objeto al que se le ingresan diferentes instancias, el "proto" sirve para que cada instancia que pase por la plantilla del objeto pueda usar
+    el metodo como si fuera propio.
+    "prototype" tambien nos obliga a usar el metodo "this" para completar la funcion y el desarrollo de la funcion. 
+
+                                    raza.prototype.saludar= function(){
+                                    return 'hola ' + this.nombre+ '. Bienvenido a la Familia';
+    
+*Constructors (de Clases)
+    "El constructor es un metodo especial de una clase que sirve para crear e inicializar una instancia de objeto de la clase"
+    Las clases son la mejor manera de ahorrar tiempo y esfuerzo ingresando informacion de tipo objetos.
+    Las clases son una forma avanzada de procesar datos y mas eficiente que los objetos. Si quiero ingresar informacion en un objeto, esta se debe repetir
+    la cantidad de veces que se ingresa una variable, mientras que las clases son la plantilla que permite ingresar los datos sin necesidad de repetir
+    muchas veces el mismo proceso.
+
+    el contructor tiene la siguiente syntaxis
+                                                class Polygon {
+                                                    constructor(argumento1, argumento2, ..., argumentoN) {
+                                                        this.name = argumento1;
+                                                    }
+                                                }
+    *'class' hace referencia a que el metodo que se esta ingresando en una clase.
+    *"Polygon" en este caso, es el nombre de la clase. Una convencion social dicta que el nombre de la clase debe tener la primera letra en mayuscula.
+    *'constructor' permite inicializar los argumentos que va a contener la clase.
+    *'this' es un metodo que se usa para referenciar el objeto dentro de la clase, dado que no se sabe cual es exactamente la variable ingresada, el 'this' permite hacer 
+        el cambio de variable segun sea ingresada.
+    *'this.name = argumento1;' esta es la manera de establecer que el 'argumento1' ingresado por medio de la clase va a tener el valor local de name.
+
+    La funcionalidad de estos elementos y objetos es muy similar a los objetos literales "var obj = {name: 'juan', apellido: 'arrieta'}"
+
+    Existe tambien un tipo de constructor que recibe una herencia con una particularidad.
+                                                            class Square extends Polygon {
+                                                                constructor(...args) {
+                                                                super(...args);
+                                                                }
+                                                            }
+
+    este contructor funciona exactamente igual que el anterior,, tiene un detalle que lo diferencia y es el "super(...args)" y el extends. 
+    "Super" nos dice que este constructor tiene argumentos de otra clase que heredo, siendo este contructor de la clase "hijo".
+    "Extends" indica que la clase Square tiene o hereda metodos o argumetos de la clase Polygon.
