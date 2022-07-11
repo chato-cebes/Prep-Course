@@ -1,0 +1,59 @@
+//CALLBACKS;
+// los metodos callbacks son metodos especiales y avanzados que dan mayor flexibilidad a la estructura desarrollada, es decir 
+// que hace que el codigo diseñado sea para muchas mas opciones y usos y no solo para una funcion estandar.   
+
+
+// *************  .FOREACH  *************
+const autos = ["Ford", "Chevrolet", "Toyota", "Tesla"];
+
+//esta opcion muestra los elementos de la lista autos y los imprime uno por uno.
+//esta manera se usa un .Foreach (que toma cada uno de los elementos) que contiene una funcion anonima con el "elemento" y el "indice"(opcional).
+
+autos.forEach(function (elemento, indice) {
+  console.log("Este auto es de la marca " + elemento);
+});
+
+
+//Este otro metodo hace exactamente lo mismo que la anterior pero usa los callBack "cb" para ejeciatar la lista
+//en esta se crea una funcion con nombre "mostrarNombres" que recibe un elemento y posterioromente lo imprime
+//despues se enlaza mediante el metodo .forEach para que tome cada uno de los elementos de la lista "autos" y los imprima.
+
+function mostrarNombres(elemento) {
+  console.log(elemento);
+}
+autos.forEach(mostrarNombres);
+
+
+// ****************  .REDUCE  *******************
+
+//REDUCE usa el primer dato y de manera progresiva va acumulando los siguientes datos para retornar un dato al final un solo valor acumulado. 
+//de la misma manera que el callback anterior se puede usar de forma separada
+//1. una funcion y un metodo o, 
+//2. una funcion dentro de un metodo. 
+
+const numeros = [2, 2, 3];
+function sumar(a, b){
+  return a + b;
+}
+const suma = numeros.reduce(sumar);
+console.log (suma);
+
+
+// ****************  .MAP  *******************
+
+//MAP devuelve la matriz evaluando uno por uno los datos internos,
+//es decir, para la matriz num = [2, 3, 4], el map evalua cada uno de los datos y retorna la nueva matriz 
+
+const num = [2, 3, 4];
+function masUno (mat){
+  return mat + 1; 
+}
+const unoMas = num.map(masUno);
+console.log (unoMas);
+
+
+const numer = [5, 8, 10];
+const mas = numer.map(function(mat){
+  return mat * 2; 
+});
+console.log (mas);
