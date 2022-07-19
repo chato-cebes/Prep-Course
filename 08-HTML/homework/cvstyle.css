@@ -1,0 +1,68 @@
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.Izquierda{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    width: 500px;
+    height: fit-content;
+    margin: 10px;
+
+}
+
+.HobbieSkill{
+    padding: 10px;
+}
+
+.Derecha{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin: 10px;
+}
+
+.Encabezado{
+    display: flex;
+    flex-direction: row;
+    background-color: teal;
+    padding: 10px;
+    border-bottom-left-radius: 150px;
+    justify-content: right;
+}
+
+.Foto{
+    display: inline-block; 
+    position: relative;
+    overflow:hidden;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid teal;
+      
+}
+
+.Titulo{
+    align-items: left;
+    justify-content: left;
+    font-size: 15px;
+    padding: 35px;
+    color: aliceblue;
+}
+
+.jobs{
+    padding-left: 10px;
+}
+
+h2{
+    justify-content: left;
+}
+
+p{
+    padding-left: 10px;
+}
